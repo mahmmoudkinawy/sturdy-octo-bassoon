@@ -1,0 +1,11 @@
+﻿@page
+@model BookListRazor.Pages.BookList.IndexModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+@foreach (var book in Model.Books)
+{
+    //Just sample to be sure that the data came from the db successfully
+    <h1>@book.Name</h1>
+}
